@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="kolkata.css">
+	
+	<title>myKolkata-Explore the city of joy</title>
+	<script type="text/javascript">
+		function displayInput()
+		{
+			var person=document.getElementById("name").value;
+			if(person.length==0)
+			{
+				alert("Hey! You didn't type anything");
+			}
+			else
+				document.getElementById("para").innerHTML="Hey "+person+"! Welcome To City of Processions. ";
+		}
+	</script>
+</head>
+<body>
+	<nav class="navbar background h-nav-resp">
+		<ul class="nav-list v-class-resp">
+			<div class="logo"><img src="kolkata1.jpg" alt="logo"></div>
+			<li><a href="#home"><strong>Home</strong></a></li>
+			
+			<li><a href="heritagebuildings.html"><strong>Heritage Buildings</strong></a></li>
+			<li><a href="amusementpark.html"><strong>Amusement Parks</strong></a></li>
+			<li><a href="museumsandlibraries.html"><strong>Museums and Library</strong></a></li>
+			<li><a href="parksandriverbanks.html"><strong>Parks and River Banks</strong></a></li>
+			<li><a href="placestoworship.html"><strong>Places to worship</strong></a></li>
+			<li><a href="festivals.html"><strong>Festivals</strong></a></li>
+			<li><a href="streets.html"><strong>Bridges and Streets</strong></a></li>
+			
+		</ul>
+		
+		<div class="burger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</nav>
+
+	<section class="background1 firstSection" id="home">
+		<div class="box-main">
+			
+			<div class="firstHalf">
+				<p class="text-big">Exploring the City of Joy</p>
+				<p class="text-small"> Kolkata is the third most populous metropolitan city after Delhi and Mumbai.It 				is known for its literary, artistic and revolutionary heritage; as the former capital of India, it was the 				birthplace of modern Indian literary and artistic thought and Kolkata has been called the "City of 						Furious, Creative Energy" as well as the "cultural capital of India".</p>
+				<p class="text-small"> Amidst the rapid globalization, there is a city which still preserves the pre-						independence era; a city where the waves of the Ganges still sing of the glory of zamindars and the city 				where the houses preserve the age-old grandmother's bedtime stories. </p>
+				
+				<p class="text-small"><strong>LETS ROME ABOUT THE  ONLY CITY WHICH GIVES YOU THE VICTORIAN 				ESSENCE</strong></p>			
+			
+				<input class="welcome" id="name" type="text" placeholder="Enter your name..">
+				<button class="btn" onclick="displayInput();">Lets explore</button>
+				<p class="text-small1" id="para"></p>
+			</div>
+	</div>
+			
+		
+	</section>
+	<footer class="background">
+		<p class="text-footer">
+			Copyright &copy; 2027 www.myKolkata.com - All rights reserved
+		</p>
+	</footer>	
+	<script src="project.js"></script>
+</body>
+</html>
